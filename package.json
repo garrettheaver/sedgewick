@@ -1,7 +1,7 @@
 {
   "name": "quark",
   "version": "0.0.1",
-  "description": "Elementary Algorithms and Data Structures",
+  "description": "Elementary Algorithms",
   "author": "Garrett Heaver",
   "license": "BSD-2-Clause",
   "main": "index.js",
