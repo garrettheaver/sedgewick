@@ -1,4 +1,5 @@
 var expect = require("chai").expect;
+var options = require("../lib/sortOptions");
 var input = [4, 8, 2, 6, 1, 9, 5, 3, 0, 7];
 
 var itBehavesAsASort = function(sort) {
@@ -19,7 +20,7 @@ var itBehavesAsASort = function(sort) {
   });
 
   it("sorts a new output array using custom order", function() {
-    var output = sort(input, function(a, b) { return a > b; });
+    var output = sort(input, options.byDescendingOrder);
     expect(output).deep.equal([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
   });
 
