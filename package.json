@@ -1,0 +1,16 @@
+{
+  "name": "quark",
+  "version": "0.0.1",
+  "description": "Elementary Algorithms and Data Structures",
+  "author": "Garrett Heaver",
+  "license": "BSD-2-Clause",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "~1.17.1",
+    "chai": "~1.9.0"
+  }
+}
+
