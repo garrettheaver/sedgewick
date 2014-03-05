@@ -4,7 +4,6 @@
   "description": "Elementary Algorithms",
   "author": "Garrett Heaver",
   "license": "BSD-2-Clause",
-  "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
