@@ -1,8 +1,9 @@
 var expect = require("chai").expect;
-var options = require("../lib/sortOptions");
-var input = [4, 8, 2, 6, 1, 9, 5, 3, 0, 7];
 
 var itBehavesAsASort = function(sort) {
+
+  var options = require("../lib/sortOptions");
+  var input = [4, 8, 2, 6, 1, 9, 5, 3, 0, 7];
 
   it("happily sorts an empty array", function() {
     var output = sort([]);
@@ -24,26 +25,26 @@ var itBehavesAsASort = function(sort) {
     expect(output).deep.equal([9, 8, 7, 6, 5, 4, 3, 2, 1, 0]);
   });
 
+  it("sorts odd sized arrays", function() {
+    var output = sort([1, 3, 0, 4, 2]);
+    expect(output).deep.equal([0, 1, 2, 3, 4]);
+  });
+
 };
 
 describe("selectionSort", function() {
-
-  var sort = require("../lib/selectionSort");
-  itBehavesAsASort(sort);
-
+  itBehavesAsASort(require("../lib/selectionSort"));
 });
 
 describe("insertionSort", function() {
-
-  var sort = require("../lib/insertionSort");
-  itBehavesAsASort(sort);
-
+  itBehavesAsASort(require("../lib/insertionSort"));
 });
 
 describe("shellSort", function() {
+  itBehavesAsASort(require("../lib/shellSort"));
+});
 
-  var sort = require("../lib/shellSort");
-  itBehavesAsASort(sort);
-
+describe("mergeSort", function() {
+  itBehavesAsASort(require("../lib/mergeSort"));
 });
 
