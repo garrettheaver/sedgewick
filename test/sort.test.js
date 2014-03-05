@@ -30,6 +30,11 @@ var itBehavesAsASort = function(sort) {
     expect(output).deep.equal([0, 1, 2, 3, 4]);
   });
 
+  it("sorts with duplicate keys", function() {
+    var output = sort([1, 3, 0, 3, 2, 4]);
+    expect(output).deep.equal([0, 1, 2, 3, 3, 4]);
+  });
+
 };
 
 describe("selectionSort", function() {
@@ -46,5 +51,9 @@ describe("shellSort", function() {
 
 describe("mergeSort", function() {
   itBehavesAsASort(require("../lib/mergeSort"));
+});
+
+describe("quickSort", function() {
+  itBehavesAsASort(require("../lib/quickSort"));
 });
 
