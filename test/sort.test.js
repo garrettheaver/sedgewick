@@ -2,8 +2,8 @@ var expect = require("chai").expect;
 
 var itBehavesAsASort = function(sort) {
 
-  var options = require("../lib/sortOptions");
-  var input = [4, 8, 2, 6, 1, 9, 5, 3, 0, 7];
+  var options = require("../lib/sortOptions"),
+      input = [4, 8, 2, 6, 1, 9, 5, 3, 0, 7];
 
   it("happily sorts an empty array", function() {
     var output = sort([]);
