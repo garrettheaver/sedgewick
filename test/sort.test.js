@@ -1,4 +1,5 @@
-var expect = require("chai").expect;
+var expect = require("chai").expect,
+    sort = require("../lib/index").sort;
 
 var itBehavesAsASort = function(sort) {
 
@@ -44,22 +45,22 @@ var itBehavesAsASort = function(sort) {
 };
 
 describe("selectionSort", function() {
-  itBehavesAsASort(require("../lib/selectionSort"));
+  itBehavesAsASort(sort.selectionSort);
 });
 
 describe("insertionSort", function() {
-  itBehavesAsASort(require("../lib/insertionSort"));
+  itBehavesAsASort(sort.insertionSort);
 });
 
 describe("shellSort", function() {
-  itBehavesAsASort(require("../lib/shellSort"));
+  itBehavesAsASort(sort.shellSort);
 });
 
 describe("mergeSort", function() {
-  itBehavesAsASort(require("../lib/mergeSort"));
+  itBehavesAsASort(sort.mergeSort);
 });
 
 describe("quickSort", function() {
-  itBehavesAsASort(require("../lib/quickSort"));
+  itBehavesAsASort(sort.quickSort);
 });
 
