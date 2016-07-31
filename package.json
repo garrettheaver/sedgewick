@@ -5,11 +5,14 @@
   "author": "Garrett Heaver",
   "license": "BSD-2-Clause",
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha -R spec",
+    "perf": "node perf/sort.perf.js"
   },
   "dependencies": {
     "mocha": "~1.17.1",
     "chai": "~1.9.0"
+  },
+  "devDependencies": {
+    "benchmark": "^2.1.1"
   }
 }
-

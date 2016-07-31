@@ -12,3 +12,5 @@ Personal project of no real value to others. Implementation of sorting algorithm
 5. Merge Sort
 6. Quick Sort
 
+A naive performance test is also included in the *perf* directory and can be executed with `npm run-script perf`
+
