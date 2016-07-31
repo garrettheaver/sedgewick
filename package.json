@@ -5,7 +5,7 @@
   "author": "Garrett Heaver",
   "license": "BSD-2-Clause",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -R spec"
   },
   "dependencies": {
     "mocha": "~1.17.1",
